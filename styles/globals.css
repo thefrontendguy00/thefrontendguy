@@ -1,0 +1,57 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+@font-face {
+    font-family: Poppins;
+    src: url(/fonts/poppins/Popping-LightItalic.otf) format("otf");
+    font-weight: 400
+}
+
+@font-face {
+    font-family: Poppins;
+    src: url(/fonts/poppins/Popping-Regular.otf) format("otf");
+    font-weight: 500
+}
+
+@font-face {
+    font-family: Poppins;
+    src: url(/fonts/poppins/Popping-Medium.otf) format("otf");
+    font-weight: 600
+}
+
+@font-face {
+    font-family: Poppins;
+    src: url(/fonts/poppins/Popping-SemiBold.otf) format("otf");
+    font-weight: 700
+}
+
+@font-face {
+    font-family: Playfair Display;
+    src: url(/fonts/playfair-display/PlayfairDisplay-Bold.otf) format("otf");
+    font-weight: 700
+}
+
+:is(h1, h2, h3, h4, h5, h6) {
+    @apply pb-6 font-playfair-display;
+}
+
+h1 {
+    @apply pt-6 text-5xl text-center font-bold;
+}
+
+h2 {
+    @apply text-xl font-semibold;
+}
+
+h3 {
+    @apply text-lg;
+}
+
+p {
+    @apply mb-8;
+}
+
+pre {
+    @apply mb-6 rounded-lg !important;
+}
